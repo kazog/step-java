@@ -21,6 +21,8 @@ public class AccountController extends BaseController{
   @RequestMapping(value = "login", method = RequestMethod.GET)
   public DataResult login(@RequestParam("name") String name) throws Exception {
     System.out.println("account============>login:");
+    String s = null;
+    s.length();
     // 登陆
     if(Integer.valueOf(name) > 0) {
       // throw AppException.create(EnumError.NOT_PARAM_ERROR);
