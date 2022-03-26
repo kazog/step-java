@@ -27,7 +27,7 @@
       console.log("===============> start");
       let socket;
       function initSocket() {
-        socket = new WebSocket("ws://192.168.253.110:9736/socke?user=" + Date.now());
+        socket = new WebSocket("ws://192.168.1.6:8793/socke?user=" + Date.now());
         socket.onopen = () => {
           console.log("============>open");
         };
@@ -52,7 +52,7 @@
           message: "啥哈哈哈哈",
         };
         // socket.send(JSON.stringify(msg));
-        socket.send('1635421900958');
+        socket.send('1648273165941');
       }
 
       function onClose() {

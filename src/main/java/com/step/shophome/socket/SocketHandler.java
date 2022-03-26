@@ -61,7 +61,7 @@ public class SocketHandler extends TextWebSocketHandler {
     String user = parseUser(session.getUri().getQuery());
 
     SocketSession.instance().add(user, session);
-    System.out.println("SocketHandler =============》afterConnectionEstablished：" + user);
+    System.out.println("SocketHandler =============》afterConnectionEstablished：" + user);
     sendMessage(session, user);
   }
 
